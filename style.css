@@ -19,6 +19,9 @@ body {
   color: white;
 }
 
+h2 {
+  text-align: center;
+}
 .hero .overlay {
   position: absolute;
   inset: 0;
@@ -83,18 +86,23 @@ body {
 .card {
   background: #fff;
   width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  transition: 0.3s;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 80px rgb(255, 0, 0);
+  background: #ffffff;
 }
 
 .card img {
   width: 100%;
+  border-radius: 16px;
   height: 350px;
   object-fit: cover;
 }
@@ -138,6 +146,13 @@ body {
   margin: 10px 0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.facts li:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 80px rgb(255, 0, 0);
+  background: #ffffff;
 }
 
 /* FOOTER */
@@ -146,4 +161,8 @@ footer {
   padding: 15px;
   background: #eee;
   margin-top: 30px;
+}
+
+a {
+  color: #000000;
 }
