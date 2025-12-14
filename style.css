@@ -100,6 +100,29 @@ h2 {
   background: #ffffff;
 }
 
+.card-archa {
+  background: #fff;
+
+  border-radius: 16px;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.card-archa img {
+  width: 100%;
+  border-radius: 16px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-archa:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 80px rgb(255, 0, 0);
+  background: #ffffff;
+}
 .card img {
   width: 100%;
   border-radius: 16px;
